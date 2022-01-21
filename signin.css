@@ -1,0 +1,78 @@
+
+header img{
+    
+    margin-left: 40%;
+    height: 30px;
+    
+  }
+
+  *{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.signin{
+    width: 400px;
+    height: 600px;
+    margin: auto;
+    
+}
+h1{
+    font: bold;
+}
+ .email input{
+    width: 400px;
+    height: 40px;
+    margin-top: 20px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+.password input{
+    width: 400px;
+    height: 40px;
+    margin-top: 20px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+button{
+    width: 400px;
+    height: 40px;
+    margin-top: 20px;
+    border-radius: 10px;
+    background-color: #A9C4E6;
+    color: white;
+    font-size: medium;
+border: transparent;
+}
+button:hover{
+    cursor: pointer;
+    background-color: #0D5AB9;
+}
+.logos1{
+    justify-content: space-around;
+    background-color: darkblue;
+    display: flex;
+    height:40px;
+    margin-bottom: 20px;
+}
+.logos2{
+justify-content: space-around;
+    background-color: rgb(231, 20, 20);
+    display: flex;
+    height:40px;
+}
+.img1{
+    width: 30px;
+    height: 30px;
+    background-color: blue;
+}
+.img2{
+    width: 30px;
+    height: 30px;
+    margin-left: 20px;
+    background-color: coral;
+}
+.icon{
+    background-color: black;
+    height: 80px;
+    width: 100%;
+}

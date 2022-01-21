@@ -1,0 +1,136 @@
+body {
+    padding: 0px 0px;
+    margin: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f3f5;
+    
+  }
+  header {
+    width: 100%;
+    background-color: #eeeeea;
+    height: 50px;
+    margin: 0px;
+    padding: 10px 0px;
+    
+    
+  }
+  nav {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    position: fixed;
+  }
+  #leftNav {
+    display: flex;
+  }
+  #leftNav > img {
+    margin-right: 20px;
+
+  }
+  #leftNav > div{
+    margin-left: 40px;
+    font-size: 15px;
+    color:black;
+    text-decoration: none;
+  }
+  #rightNav {
+    display: flex;
+    padding-top: 20px;
+  }
+  #rightNav > a {
+    margin-left: 20px;
+    font-size: 15px;
+    color:black;
+    text-decoration: none;
+  }
+  .img1{
+    height: 50px;
+    width:100px;
+    margin-left: 200px;
+  }
+  .cointainer1{
+    height:400px;
+    width:100%;
+  }
+  .cointainer1>img{
+    height: 600px;
+    width:100%;
+  }
+  .middlepart{
+
+  }
+  .middlepart > h2,h3{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 25px;
+
+  }
+  .middlepart{
+    text-align: center;
+    margin-top: 200px;
+   }
+   .cointainer2{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    padding:0px  40px;
+   }
+   .cointainer3{
+   display:grid;
+   grid-template-columns:repeat(2,600px);
+   grid-template-rows: repeat(1,100%);
+   background-color: green;
+   gap:90px;
+   text-decoration: whitesmoke;
+   }
+   .witness{
+     text-align: center;
+   }
+   .cointainer4{
+    display: grid;
+    grid-template-columns: repeat(2,200px);
+    grid-template-rows: repeat(1,100%);
+    justify-content: center;
+    grid-gap: 10px;
+   }
+   /* footer */
+footer{
+  width: 80%;
+  margin: auto;
+}
+#links {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+footer>div a{
+text-decoration: none;
+color: #0a438b;
+}
+footer>div li{
+text-decoration: none;
+list-style-type:none;
+margin: 20px 0px;
+}
+footer p{
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+#support{
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 90px;
+  border: none;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 5px 5px 5px grey;
+  color: #0a438b;
+}
+#support:hover{
+  background-color: #0a438b;
+  color: white;
+}
+
+
