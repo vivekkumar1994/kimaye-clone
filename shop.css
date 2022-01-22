@@ -107,4 +107,9 @@ body {
     background-color: #0a438b;
     color: white;
   }
+  .material-icons > img{
+    height: 40px;
+    width: 40px;
+    }
+    
  

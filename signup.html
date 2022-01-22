@@ -94,8 +94,8 @@
          <input type="text" id="fname" placeholder="Firstname" required><br>
          <input type="text" placeholder="lastname" id="lname" required><br>
          <input type="password" id="pass" placeholder="Password" required><br>
-         <p>By creating an account, I agree to the Travelocity <a>Terms and Conditions</a> and <a>Privacy Statement</a>.</p>
-         <button>Continue</button>
+         <p>By creating an account, I agree to the Kimaya <a>Terms and Conditions</a> and <a>Privacy Statement</a>.</p>
+        <button>Continue</button>
         
      </form>
      <p>Already have an account? <a href="signin.html">Sign in</a></p>
@@ -115,5 +115,30 @@
 </html>
 
 <script>
-      
+    document.querySelector("#form");
+
+document.querySelector("button").addEventListener("click",store);
+
+var signupdetails=[];
+
+function store(event){
+event.preventDefault();
+var cerdentials={
+    mail: form.email.value,
+    fname: form.fname.value,
+    lname: form.lname.value,
+    pass: form.pass.value
+}
+
+signupdetails.push(cerdentials);
+
+localStorage.setItem("usercred",JSON.stringify(signupdetails));
+}
+
+
+document.querySelector("button").addEventListener("click",gotomain);
+
+function gotomain(){
+window.location.href="signin.html"
+}
 </script>

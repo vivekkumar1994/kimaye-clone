@@ -14,7 +14,7 @@
     <header>
         <nav>
             <div class="icon">
-                <a href="index.html"><img
+                <a href="homepage.html"><img
                    
                   /></a>
                 
@@ -34,8 +34,7 @@
       
          <a href=""><p>Forgot password?</p></a>
        <button class ="bt">Sign in</button>
-       
-
+    
 <p>Don't have an account? <a href="signup.html">Create one</a></p>
 <p>or continue with</p>
 <div class="logos1">
@@ -50,10 +49,33 @@
         <img src="https://a.travel-assets.com/egds/marks/apple.svg" alt="">
     </div>
 </div>
-  </form>
+</form>
+
 </div>
 </body>
 </html>
 
-<script src="signin.js"></script>
+<script>
+    document.querySelector("form").addEventListener("submit",goto)
+
+var cred=JSON.parse(localStorage.getItem("usercred"));
+
+function goto(event){
+    event.preventDefault();
+
+    var email = document.querySelector("#email").value;
+    var password=document.querySelector("#password").value;
+
+    for(i=0;i<cred.length;i++){
+        if(cred[i].mail==email && cred[i].pass==password){
+            window.location.href="homepage.html";
+            
+        }
+        else{
+            alert("please enter the correct details!!")
+        }
+    }
+}
+
+</script>
 
